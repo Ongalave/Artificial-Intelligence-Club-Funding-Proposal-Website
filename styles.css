@@ -1593,6 +1593,339 @@ a { color: inherit; text-decoration: none; }
   transform: rotate(45deg);
 }
 
+/* ===== Certification Comparison ===== */
+.cert-comparison {
+  max-width: 900px;
+  margin: 48px auto 0;
+}
+
+.cert-intro {
+  color: var(--gray-700);
+  margin-bottom: 32px;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.cert-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.cert-card {
+  border: 1px solid var(--gray-200);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--white);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cert-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.cert-card-header {
+  padding: 20px 24px;
+  color: var(--white);
+  text-align: center;
+}
+
+.cert-card-header h4 {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.cert-card-header span {
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
+
+.cert-maven { background: var(--gold); color: var(--gray-900); }
+.cert-mit { background: var(--maroon); }
+
+.cert-card-body {
+  padding: 8px 0;
+}
+
+.cert-row {
+  display: flex;
+  padding: 10px 24px;
+  border-bottom: 1px solid var(--gray-100);
+  font-size: 0.88rem;
+}
+
+.cert-row:last-child {
+  border-bottom: none;
+}
+
+.cert-label {
+  flex-shrink: 0;
+  width: 120px;
+  font-weight: 600;
+  color: var(--maroon);
+  font-size: 0.82rem;
+}
+
+.cert-row span:last-child {
+  color: var(--gray-700);
+}
+
+/* ===== Enhancement Menu ===== */
+.enhancement-intro {
+  max-width: 780px;
+  margin: 0 auto 40px;
+  text-align: center;
+  color: var(--gray-700);
+  line-height: 1.7;
+}
+
+.enhancement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.enhancement-card {
+  background: var(--cream);
+  border: 1px solid var(--gray-200);
+  border-radius: 12px;
+  padding: 24px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+.enhancement-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.enhancement-icon {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.enhancement-card h4 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 4px;
+}
+
+.enhancement-detail {
+  font-size: 0.78rem;
+  color: var(--gray-500);
+  font-weight: 500;
+}
+
+.enhancement-card p {
+  font-size: 0.85rem;
+  color: var(--gray-600);
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.enhancement-cost {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--maroon);
+  background: rgba(123,26,44,0.08);
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.enhancement-note {
+  max-width: 780px;
+  margin: 32px auto 0;
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--gray-500);
+  line-height: 1.7;
+}
+
+/* ===== Deliverables Matrix ===== */
+.deliverables-intro {
+  max-width: 780px;
+  margin: 0 auto 40px;
+  text-align: center;
+  color: var(--gray-700);
+  line-height: 1.7;
+}
+
+.deliverables-matrix {
+  max-width: 750px;
+  margin: 0 auto 48px;
+  overflow-x: auto;
+}
+
+.matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.matrix-table th {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gray-500);
+  font-weight: 600;
+  border-bottom: 2px solid var(--gray-300);
+}
+
+.semester-col {
+  text-align: center !important;
+  width: 100px;
+}
+
+.sem-header {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 4px;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.s1-bg { background: var(--maroon); }
+.s2-bg { background: var(--gray-700); }
+.s3-bg { background: #5C4A28; }
+
+.sem-sub {
+  display: block;
+  font-size: 0.65rem;
+  color: var(--gray-500);
+  margin-top: 4px;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.matrix-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--gray-100);
+  font-size: 0.9rem;
+}
+
+.dot {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.dot-maroon { background: var(--maroon); }
+.dot-maroon-sm { background: var(--maroon); width: 12px; height: 12px; }
+.dot-gold { background: var(--gold); }
+
+.dot-dash {
+  color: var(--gray-300);
+  font-size: 1rem;
+}
+
+/* Cumulative Investment */
+.cumulative-table-wrap {
+  max-width: 700px;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+.cumulative-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cumulative-table th {
+  padding: 14px 20px;
+  text-align: left;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gray-500);
+  font-weight: 600;
+  border-bottom: 2px solid var(--gray-300);
+}
+
+.cumulative-table td {
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--gray-200);
+  font-size: 0.95rem;
+}
+
+.cumulative-table .amount-col {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  text-align: right;
+}
+
+.cumulative-table .total-row td {
+  border-top: 2px solid var(--maroon);
+  border-bottom: none;
+  font-size: 1.05rem;
+}
+
+/* ===== Closing Section ===== */
+.closing-section {
+  background: linear-gradient(180deg, var(--white) 0%, var(--cream) 100%);
+}
+
+.closing-content {
+  max-width: 780px;
+  margin: 0 auto 48px;
+}
+
+.closing-content p {
+  color: var(--gray-700);
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+.closing-emphasis {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--gray-900) !important;
+  padding: 20px 0 0;
+  border-top: 2px solid var(--gold);
+  margin-top: 24px !important;
+}
+
+.closing-signatures {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.signature {
+  margin-bottom: 16px;
+}
+
+.signature strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--gray-900);
+}
+
+.signature span {
+  font-size: 0.85rem;
+  color: var(--gray-500);
+}
+
+.signature-footer {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--gray-200);
+  font-size: 0.85rem;
+  color: var(--gray-500);
+}
+
 /* ===== Footer ===== */
 .footer {
   background: var(--maroon-dark);
@@ -1760,6 +2093,18 @@ a { color: inherit; text-decoration: none; }
 
   .deliverables-list {
     padding: 0 16px 16px;
+  }
+
+  .cert-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .enhancement-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-label {
+    width: 100px;
   }
 }
 
